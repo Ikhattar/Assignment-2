@@ -3,31 +3,29 @@
 ## Statement of Purpose
 This README documents how I converted my resume to **Markdown**, generated a **static website** using **Pelican**, and **hosted** it on **GitHub**. It is intended for Marvin McLaren (and anyone at a similar level of technical familiarity) who wants to see a straightforward application of **Andrew Etter’s** principles from *Modern Technical Writing*. I also draw on guidelines from William S. Pfeiffer’s *Technical Communication* to ensure the instructions are clear, concise, and properly structured.
 
----
+***
 
 ## Prerequisites
 Before you begin, you will need:
 
 1. **A Markdown-capable Text Editor**  
-   - Tools like Visual Studio Code, Sublime Text, or Atom work well.  
-   - Andrew Etter recommends using a *lightweight markup language* like Markdown for documentation clarity and version control.
+   - Tools like VS Code, Sublime Text or even R studio 
+   - For this I used VS code. 
 
 2. **GitHub Account**  
-   - [https://github.com/](https://github.com/) (free sign-up)  
+   - Create a [Github](https://github.com/) account
    - This is where you’ll host both the project source and the final rendered site (via GitHub Pages or a branch approach).
 
 3. **Git**  
    - A version control system for creating local repos and pushing code to GitHub.  
    - Confirm with `git --version`.
 
-4. **Python 3**  
+4. **Python**  
    - Required to run Pelican.  
-   - Check by typing `python3 --version` or `python --version` in your terminal.
+   - Check by typing `python --version` in your terminal.
 
 5. **Pelican (with Markdown Support)**  
-   - Install via:
-     ```bash
-     python3 -m pip install "pelican[markdown]"
+   - python -m pip install "pelican[markdown]"
      ```
    - This will process `.md` files into static HTML.
 
@@ -35,10 +33,10 @@ Before you begin, you will need:
    - If you only have a PDF or Word resume, copy the text into a `.md` file (e.g., `resume.md`).  
    - Use headings, lists, and bold text to reflect your sections (Skills, Experience, Education, etc.).
 
-> **(Pfeiffer Guideline #1: Select the correct technical level)**  
+
 > These instructions assume basic familiarity with the command line and Markdown, but no deep expertise in software development or DevOps is required.
 
----
+***
 
 ## Instructions
 
@@ -132,3 +130,18 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
 1. **Build** again:
    ```bash
    pelican content
+
+## A FAQ
+ * ##### Why is Markdown better than writing raw HTML? 
+ * Markdown is simple, it is easier to read if compared to raw HTML which is easier to edit in future. Markdown gas alot of tags such we can use '#' for headings '-' or '*' for bullets making it easier to read.
+
+ * ##### I changed the Markdown version of my resume, so why don’t I see the changes when I refresh the website in my browser?
+ * Everytime you change your resume you have to stop the website by taping CTRL-C and then typing 
+ ```bash
+ pelican content
+ ```
+* and then in your terminal again type the command below to publish the website with the updated resume.
+```bash
+pelican --listen
+```
+# Assignment-2
