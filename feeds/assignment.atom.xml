@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Resume A2 - Personal</title><link href="https://github.com/Ikhattar/Assignment-2.git/" rel="alternate"></link><link href="https://github.com/Ikhattar/Assignment-2.git/feeds/personal.atom.xml" rel="self"></link><id>https://github.com/Ikhattar/Assignment-2.git/</id><updated>2025-03-05T00:00:00-06:00</updated><entry><title>Resume</title><link href="https://github.com/Ikhattar/Assignment-2.git/resume.html" rel="alternate"></link><published>2025-03-05T00:00:00-06:00</published><updated>2025-03-05T00:00:00-06:00</updated><author><name>Ish</name></author><id>tag:github.com,2025-03-05:/Ikhattar/Assignment-2.git/resume.html</id><summary type="html">&lt;h1&gt;ISH KHATTAR&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Resume A2 - Assignment</title><link href="https://ikhattar.github.io/Assignment-2/" rel="alternate"></link><link href="https://ikhattar.github.io/Assignment-2/feeds/assignment.atom.xml" rel="self"></link><id>https://ikhattar.github.io/Assignment-2/</id><updated>2025-03-05T00:00:00-06:00</updated><entry><title>Resume</title><link href="https://ikhattar.github.io/Assignment-2/resume.html" rel="alternate"></link><published>2025-03-05T00:00:00-06:00</published><updated>2025-03-05T00:00:00-06:00</updated><author><name>Ish</name></author><id>tag:ikhattar.github.io,2025-03-05:/Assignment-2/resume.html</id><summary type="html">&lt;h1&gt;ISH KHATTAR&lt;/h1&gt;
 &lt;p&gt;Winnipeg, MB R3Y&lt;br&gt;
 &lt;strong&gt;Phone:&lt;/strong&gt; 204-952-3211&lt;br&gt;
 &lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:ish.khattar.99@gmail.com"&gt;ish.khattar.99@gmail.com&lt;/a&gt;&lt;/p&gt;
@@ -27,24 +27,24 @@
 &lt;h3&gt;Software Developer Assistant&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;UMSU (University of Manitoba Students’ Union), Winnipeg, MB&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;July 2023 – Present&lt;/em&gt;&lt;br&gt;
-- Develop and maintain internal web applications, focusing on scheduling systems and data management.&lt;br&gt;
-- Integrate social media features and promotional tools with UMSU platforms in collaboration with marketing.&lt;br&gt;
-- Implement basic analytics pipelines to track user engagement, improving usability and workflow efficiency.&lt;br&gt;
-- Produce clear, concise internal documentation, enabling new hires to learn development processes quickly.&lt;/p&gt;
+&lt;em&gt; Develop and maintain internal web applications, focusing on scheduling systems and data management.&lt;br&gt;
+&lt;/em&gt; Integrate social media features and promotional tools with UMSU platforms in collaboration with marketing.&lt;br&gt;
+&lt;em&gt; Implement basic analytics pipelines to track user engagement, improving usability and workflow efficiency.&lt;br&gt;
+&lt;/em&gt; Produce clear, concise internal documentation, enabling new hires to learn development processes quickly.&lt;/p&gt;
 &lt;h3&gt;Freelance Web Developer (Contract)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Affinity Salons, New Delhi, India&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;September 2020 – June 2023&lt;/em&gt;&lt;br&gt;
-- Designed and launched a responsive salon website, increasing online appointment bookings by integrating user-friendly scheduling tools.&lt;br&gt;
-- Employed secure payment options and HTTPS certification to maintain data integrity and build client trust.&lt;br&gt;
-- Coordinated closely with designers and marketing specialists to ensure brand consistency across digital channels.&lt;br&gt;
-- Gathered and analyzed site metrics to refine web features, boosting user engagement and customer satisfaction.&lt;/p&gt;
+&lt;em&gt; Designed and launched a responsive salon website, increasing online appointment bookings by integrating user-friendly scheduling tools.&lt;br&gt;
+&lt;/em&gt; Employed secure payment options and HTTPS certification to maintain data integrity and build client trust.&lt;br&gt;
+&lt;em&gt; Coordinated closely with designers and marketing specialists to ensure brand consistency across digital channels.&lt;br&gt;
+&lt;/em&gt; Gathered and analyzed site metrics to refine web features, boosting user engagement and customer satisfaction.&lt;/p&gt;
 &lt;h3&gt;Sales Associate (Technical Focus)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Best Buy, Winnipeg, MB&lt;/strong&gt;&lt;br&gt;
 &lt;em&gt;October 2021 – Present&lt;/em&gt;&lt;br&gt;
-- Recommend hardware/software solutions based on diverse customer needs, regularly surpassing monthly sales targets.&lt;br&gt;
-- Offer extended warranties, service plans, and troubleshooting assistance, contributing to elevated customer satisfaction ratings.&lt;br&gt;
-- Stay informed of emerging tech trends, including smart home innovations, to provide up-to-date consultations.&lt;br&gt;
-- Deliver hands-on tutorials to help clients set up and optimize new electronics, enhancing post-purchase experiences.&lt;/p&gt;
+&lt;em&gt; Recommend hardware/software solutions based on diverse customer needs, regularly surpassing monthly sales targets.&lt;br&gt;
+&lt;/em&gt; Offer extended warranties, service plans, and troubleshooting assistance, contributing to elevated customer satisfaction ratings.&lt;br&gt;
+&lt;em&gt; Stay informed of emerging tech trends, including smart home innovations, to provide up-to-date consultations.&lt;br&gt;
+&lt;/em&gt; Deliver hands-on tutorials to help clients set up and optimize new electronics, enhancing post-purchase experiences.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;Education&lt;/h2&gt;
 &lt;h3&gt;Bachelor of Science: Computer Science&lt;/h3&gt;
@@ -69,4 +69,4 @@
 &lt;ul&gt;
 &lt;li&gt;Experience integrating marketing insights with software solutions to align business goals and technical objectives.  &lt;/li&gt;
 &lt;li&gt;Passionate about continuous learning and staying current with the latest software development methodologies, particularly in Python and web technologies.  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="Personal"></category></entry></feed>
+&lt;/ul&gt;</content><category term="Assignment"></category></entry></feed>
