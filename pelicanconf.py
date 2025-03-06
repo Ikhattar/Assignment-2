@@ -1,5 +1,5 @@
 AUTHOR = 'Ish'
-SITENAME = 'My website'
+SITENAME = 'Resume A2'
 SITEURL = ""
 
 PATH = "content"
