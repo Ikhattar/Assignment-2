@@ -115,7 +115,6 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
    * Select `gh-pages` in branch and then `/root` and save it
 
 ### Step 6: Changing `publishconf.py`
-
    * Open terminal and enter these commands with `URL` from Step 5 (You can also copy from GitHub after you make Repository):
      ```
      git remote add origin URL
@@ -141,7 +140,9 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
  ```
  git push origin gh-pages
  ```
+
 ---
+
 ## Further Resources / Readings
 
 1. **Pelican Official Documentation**  
@@ -153,12 +154,12 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
    *Step-by-step instructions on how to start GitHub Repositories and also get help or troubleshoot*
 
 3. **Markdown Tutorial**  
-   [Markdown Tutorial](https://www.markdowntutorial.com/)  
-   *If you need a help learning on the basics of Markdown or want to explore advance features as well.*
+   [Markdown Preview](https://markdownlivepreview.com)  
+   *Preview Markdown files as you write.*
 
 4. **Python Official Site**  
    [Python](https://www.python.org/)  
-   *Downloads, documentation, and tutorials for Python, which powers Pelican.*
+   *Downloads Python, which is needed by Pelican.*
 ---
 ## A FAQ
  * ##### Why is Markdown better than writing raw HTML? 
