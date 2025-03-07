@@ -49,7 +49,7 @@ Before you begin, you will need:
 ## Instructions
 ##### Guideline 6: Lead off each action step with a verb
 
-Below is a detailed, **step-by-step** guide on how I built and published my resume site.
+Below is a detailed, **step-by-step** guide on how I built and published my resume on GitHub.
 
 ### Step 1:
   * Open your resume `resume.md` 
