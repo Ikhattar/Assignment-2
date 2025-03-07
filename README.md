@@ -162,12 +162,11 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
 ---
 ## A FAQ
  * ##### Why is Markdown better than writing raw HTML? 
- * Markdown is simple, it is easier to read if compared to raw HTML which is easier to edit in future. Markdown gas alot of tags such we can use '#' for headings '-' or '*' for bullets making it easier to read.
+  Markdown is simpler and more readable than raw HTML, which is easier to edit in future. Markdown has alot of features like '#' for headings '-' or '*' for bullets making it easier to read and edit.
 
  * ##### I changed the Markdown version of my resume, so why don’t I see the changes when I refresh the website in my browser?
- * Everytime you change your resume you have to type this in your terminal 
- `pelican content` and then in your terminal again type the command below to check if your resume is correct `pelican --listen`
- Now you will have to repeat Step 7 again. Enter these command in your terminal `pelican content -s publishconf.py` `ghp-import output -b gh-pages` `git push origin gh-pages` This will update the resume online
+  Everytime you change your resume you have to type this in your terminal 
+ `pelican content` and then in your terminal again type the command below to check if your resume is correct `pelican --listen` now you will have to repeat Step 7 again. Enter these command in your terminal `pelican content -s publishconf.py` `ghp-import output -b gh-pages` `git push origin gh-pages` This will update the resume online
 
 
 ---
