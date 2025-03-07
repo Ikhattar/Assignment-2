@@ -63,7 +63,7 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
      ```
      This helps Pelican treat the file as a valid content article/page.
 
-### 2nd step: Initialize a Pelican Project
+### Step 2: Initialize a Pelican Project
  * Make a new directory, for instance `website` or `resume`, and open it in a terminal.  
  * Run this command in terminal:
   ```
@@ -87,12 +87,12 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
    *  Do you want to upload your website using GitHub Pages? (y/N)
  * Check that Pelican created files like `pelicanconf.py`, `publishconf.py`, and folders named `content` and `output`.
 
-### 3rd Step: Place `resume.md` in the `content` Folder
+### Step 3: Place `resume.md` in the `content` Folder
   * Move `resume.md` into the `content` folder.  
   * Verify the top lines match the Pelican front matter format (“Title: …”).  
   * Ensure your headings and bullet points work well in a Markdown and preview it [here](https://markdownlivepreview.com) if you want a quick check.
 
-### 4th Step:  Generate and Preview the Website Locally
+### Step 4:  Generate and Preview the Website Locally
    * **Open** a terminal in your project folder (the one containing `pelicanconf.py` and other files).  
    * Run this in terminal:
      ```
@@ -107,14 +107,14 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
    * Then visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to see your site.  
    * Check that your resume appears properly. If needed, revise `resume.md` and rebuild.
 
-### 5th Step: Set Up GitHub Repository
+### Step 5: Set Up GitHub Repository
 
    * Setup a GitHub Repository by going to [ GitHub Dashboard](https://github.com/dashboard) and clicking new repository.
    * Create a new repository on GitHub (e.g., “example”) and copy its `URL` from GitHub.  
    * Select `settings` in Repository and then select `pages`
    * Select `gh-pages` in branch and then `/root` and save it
 
-### 6th Step: Changing `publishconf.py`
+### Step 6: Changing `publishconf.py`
 
    * Open terminal and enter these commands with `URL` from Step 5 (You can also copy from GitHub after you make Repository):
      ```
@@ -128,7 +128,7 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
     SITEURL = "URL"
    ```
 
-### 7th Step: Publish the Static Site on GitHub
+### Step 7: Publish the Static Site on GitHub
 ##### Guideline 5: Place only one action in each step
 
  * Enter these command in your terminal 
