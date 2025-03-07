@@ -41,7 +41,7 @@ Before you begin, you will need:
 
 6. **Make a Resume in Markdown**  
    * If you only have a PDF or Word resume, copy the text into a `.md` file (e.g., `resume.md`).  
-   * Headings, lists, and bold text to reflect your sections (Skills, Experience, Education, etc.).
+   * Make headings, lists, and bold text to reflect your sections (Skills, Experience, Education, etc.).
 
 
 ---
@@ -52,19 +52,16 @@ Before you begin, you will need:
 Below is a detailed, **step-by-step** guide on how I built and published my resume site.
 
 ### Step 1:
-  * Create a file called `resume.md` using your text editor.  
-  * Use headers (`#`, `##`, `###`) to structure your content (e.g., “Skills,” “Work History,” “Education”).  
-  * Incorporate bullet points for job responsibilities, short achievements, or skill listings.  
+  * Open your resume `resume.md` 
   * Add a short metadata block at the top for Pelican:
      ```markdown
      Title: Resume
      Date: 2025-03-05
-     Category: Personal
+     Category: Assignment
      ```
-     This helps Pelican treat the file as a valid content article/page.
 
 ### Step 2: Initialize a Pelican Project
- * Make a new directory, for instance `website` or `resume`, and open it in a terminal.  
+ * Make a new directory, for example `website` or `Pelican Resume`, and open it in a terminal.  
  * Run this command in terminal:
   ```
   pelican-quickstart
