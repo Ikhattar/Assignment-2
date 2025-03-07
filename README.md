@@ -69,8 +69,8 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
  * Answer a few question that will be asked 
  ```
    * Where do you want to create your new web site? [.]
-   *  What will be the title of this web site? Ferrets Unlimited
-   *  Who will be the author of this web site? Pafnuty the Ferret
+   *  What will be the title of this web site? Eg. Resume
+   *  Who will be the author of this web site? Your Name
    *  What will be the default language of this web site? [en]
    *  Do you want to specify a URL prefix? e.g., https://example.com (Y/n) n
    *  Do you want to enable article pagination? (Y/n)
