@@ -149,11 +149,11 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
    [Get Pelican](https://docs.getpelican.com/)  
    *A guide on how to use Pelican*
 
-2. **GitHub Pages Documentation**  
+2. **GitHub Pages**  
    [GitHub Pages](https://docs.github.com/en/pages)  
    *Step-by-step instructions on how to start GitHub Repositories and also get help or troubleshoot*
 
-3. **Markdown Tutorial**  
+3. **Markdown Preview**  
    [Markdown Preview](https://markdownlivepreview.com)  
    *Preview Markdown files as you write.*
 
