@@ -67,6 +67,7 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
   pelican-quickstart
   ```
  * Answer a few question that will be asked 
+ ```
    * Where do you want to create your new web site? [.]
    *  What will be the title of this web site? Ferrets Unlimited
    *  Who will be the author of this web site? Pafnuty the Ferret
@@ -82,6 +83,7 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
    *  Do you want to upload your website using S3? (y/N)
    *  Do you want to upload your website using Rackspace Cloud Files? (y/N)
    *  Do you want to upload your website using GitHub Pages? (y/N)
+   ```
  * Check that Pelican created files like `pelicanconf.py`, `publishconf.py`, and folders named `content` and `output`.
 
 ### Step 3: Place `resume.md` in the `content` Folder
@@ -142,21 +144,19 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
 
 ## Further Resources / Readings
 
-1. **Pelican Official Documentation**  
-   [Get Pelican](https://docs.getpelican.com/)  
+1. [Get Pelican](https://docs.getpelican.com/)  
    *A guide on how to use Pelican*
 
-2. **GitHub Pages**  
-   [GitHub Pages](https://docs.github.com/en/pages)  
+2. [GitHub Pages](https://docs.github.com/en/pages)  
    *Step-by-step instructions on how to start GitHub Repositories and also get help or troubleshoot*
 
-3. **Markdown Preview**  
-   [Markdown Preview](https://markdownlivepreview.com)  
+3. [Markdown Preview](https://markdownlivepreview.com)  
    *Preview Markdown files as you write.*
 
-4. **Python Official Site**  
-   [Python](https://www.python.org/)  
+4.  [Python](https://www.python.org/)  
    *Downloads Python, which is needed by Pelican.*
+5. [Markdown Tutorial](https://www.markdowntutorial.com/)
+   *To learn features for Markdown*
 ---
 ## A FAQ
  * ##### Why is Markdown better than writing raw HTML? 
@@ -174,6 +174,8 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
  * Peer Editors: Davud Habibullah
  * Third-Party Materials:
    * [Pelican](https://docs.getpelican.com/) – a static site publishing tool All rights reserved.
-   * [Markdown Tutorial](https://www.markdowntutorial.com/) - To learn and get some features for Markdown
+   * [Markdown Tutorial](https://www.markdowntutorial.com/) - To learn features for Markdown
+   * [Markdown Preview](https://markdownlivepreview.com) - Preview Markdown files as you write.
    * [Python](https://www.python.org/) - Download Python and use it for Pelican
    * [GitHub](https://docs.github.com/en/pages) - To upload the project
+   * Andrew Etter’s *Modern Technical Writing*
