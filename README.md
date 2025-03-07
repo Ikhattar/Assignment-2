@@ -1,56 +1,61 @@
 # Building and Hosting My Resume with Pelican and GitHub
 
 ## Statement of Purpose
-This README documents how I converted my resume to **Markdown**, generated a **static website** using **Pelican**, and **hosted** it on **GitHub**. It is intended for Marvin McLaren (and anyone at a similar level of technical familiarity) who wants to see a straightforward application of **Andrew Etter’s** principles from *Modern Technical Writing*. I also draw on guidelines from William S. Pfeiffer’s *Technical Communication* to ensure the instructions are clear, concise, and properly structured.
+
+##### Guideline 1: Select the correct technical level
+
+This README explains how I converted my resume into a Markdown-based static site using Pelican and then published it on GitHub. This is for Marvin or anyone else who has basic technical knowledge and it shows best ways to work with a Markdown file and how to upload projects on GitHub. I am also trying to keep the instructions straightforward, simple, and well-structured for easier access.
 
 ***
 
 ## Prerequisites
+##### Guideline 10: Keep a simple style
 Before you begin, you will need:
 
 1. **A Markdown-capable Text Editor**  
-   - Tools like VS Code, Sublime Text or even R studio 
-   - For this I used VS code. 
+   * Tools like [VS Code](https://code.visualstudio.com/download), [Sublime Text](https://www.sublimetext.com/download) or even [R Studio](https://posit.co/download/rstudio-desktop/). 
+
+   * For this I used VS code. 
 
 2. **GitHub Account**  
-   - Create a [Github](https://github.com/) account
-   - This is where you’ll host both the project source and the final rendered site (via GitHub Pages or a branch approach).
+   * A [GitHub](https://github.com/) account is necessary.
+   * This is where you’ll host both the project source and the final rendered site.
 
 3. **Git**  
-   - A version control system for creating local repos and pushing code to GitHub.  
-   - Confirm with `git --version`.
+   * A version control system for creating local repos and pushing code to GitHub.  
+   * Confirmation of git can be done by running this command `git --version`.
 
 4. **Python**  
-   - Required to run Pelican.  
-   - Check by typing `python --version` in your terminal.
+   * Python is required to run Pelican. 
+   * The official download page for [Python](https://www.python.org/downloads/)
+   * Check by typing `python --version` in your terminal.
+
+
 
 5. **Pelican (with Markdown Support)**  
-   - python -m pip install "pelican[markdown]"
-     ```
-   - This will process `.md` files into static HTML.
+   * Pelican is installed by typing this in terminal
+   ```
+   python -m pip install "pelican[markdown]"
+   ```
+   * This will help to process `.md` files into static HTML.
 
-6. **A Resume in Markdown**  
-   - If you only have a PDF or Word resume, copy the text into a `.md` file (e.g., `resume.md`).  
-   - Use headings, lists, and bold text to reflect your sections (Skills, Experience, Education, etc.).
+6. **Make a Resume in Markdown**  
+   * If you only have a PDF or Word resume, copy the text into a `.md` file (e.g., `resume.md`).  
+   * Headings, lists, and bold text to reflect your sections (Skills, Experience, Education, etc.).
 
 
-> These instructions assume basic familiarity with the command line and Markdown, but no deep expertise in software development or DevOps is required.
-
-***
+---
 
 ## Instructions
+##### Guideline 6: Lead off each action step with a verb
 
-Below is a detailed, **step-by-step** guide on how I built and published my resume site, referencing Andrew Etter’s recommendations for modern technical documentation.
+Below is a detailed, **step-by-step** guide on how I built and published my resume site.
 
-### 1. Convert or Create Your Resume in Markdown
-- **Etter Principle**: *Opt for a lightweight markup language*  
-  In *Modern Technical Writing*, Etter emphasizes that Markdown is easier to read, merge, and maintain than proprietary file formats or heavy markup languages.
-
-- **Practical Steps**:
-  1. **Create** a file called `resume.md` using your text editor.  
-  2. **Use** headers (`#`, `##`, `###`) to structure your content (e.g., “Skills,” “Work History,” “Education”).  
-  3. **Incorporate** bullet points for job responsibilities, short achievements, or skill listings.  
-  4. **Add** a short metadata block at the top for Pelican:
+### Step 1:
+  * Create a file called `resume.md` using your text editor.  
+  * Use headers (`#`, `##`, `###`) to structure your content (e.g., “Skills,” “Work History,” “Education”).  
+  * Incorporate bullet points for job responsibilities, short achievements, or skill listings.  
+  * Add a short metadata block at the top for Pelican:
      ```markdown
      Title: Resume
      Date: 2025-03-05
@@ -58,90 +63,120 @@ Below is a detailed, **step-by-step** guide on how I built and published my resu
      ```
      This helps Pelican treat the file as a valid content article/page.
 
-### 2. Initialize a Pelican Project
-- **Etter Principle**: *Use a static site generator instead of a full CMS*  
-  This results in a **lighter, faster, and more secure** website with less overhead.
+### 2nd step: Initialize a Pelican Project
+ * Make a new directory, for instance `website` or `resume`, and open it in a terminal.  
+ * Run this command in terminal:
+  ```
+  pelican-quickstart
+  ```
+ * Answer a few question that will be asked 
+   * Where do you want to create your new web site? [.]
+   *  What will be the title of this web site? Ferrets Unlimited
+   *  Who will be the author of this web site? Pafnuty the Ferret
+   *  What will be the default language of this web site? [en]
+   *  Do you want to specify a URL prefix? e.g., https://example.com (Y/n) n
+   *  Do you want to enable article pagination? (Y/n)
+   *  How many articles per page do you want? [10]
+   *  What is your time zone? [America/Winnipeg]
+   *  Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n)
+   *  Do you want to upload your website using FTP? (y/N)
+   *  Do you want to upload your website using SSH? (y/N)
+   *  Do you want to upload your website using Dropbox? (y/N)
+   *  Do you want to upload your website using S3? (y/N)
+   *  Do you want to upload your website using Rackspace Cloud Files? (y/N)
+   *  Do you want to upload your website using GitHub Pages? (y/N)
+ * Check that Pelican created files like `pelicanconf.py`, `publishconf.py`, and folders named `content` and `output`.
 
-- **Practical Steps**:
-  1. **Make** a new directory, for instance `website/`, and open it in a terminal.  
-  2. **Run**:
-     ```bash
-     pelican-quickstart
+### 3rd Step: Place `resume.md` in the `content` Folder
+  * Move `resume.md` into the `content` folder.  
+  * Verify the top lines match the Pelican front matter format (“Title: …”).  
+  * Ensure your headings and bullet points work well in a Markdown and preview it [here](https://markdownlivepreview.com) if you want a quick check.
+
+### 4th Step:  Generate and Preview the Website Locally
+   * **Open** a terminal in your project folder (the one containing `pelicanconf.py` and other files).  
+   * Run this in terminal:
      ```
-     - Provide a site title (e.g., “My Resume Site”), author name, and time zone when prompted.  
-  3. **Check** that Pelican created files like `pelicanconf.py`, `publishconf.py`, and folders named `content/` and `output/`.
-
-### 3. Place `resume.md` in the `content` Folder
-- **Etter Principle**: *Organize docs in a single source location*  
-  Placing your `.md` in `content/` aligns with Pelican’s default structure and clarifies where the source text resides.
-
-- **Practical Steps**:
-  1. **Move** `resume.md` into the `content/` folder.  
-  2. **Verify** the top lines match the Pelican front matter format (“Title: …”).  
-  3. **Ensure** your headings and bullet points render well in a Markdown preview if you want a quick check.
-
-> **(Pfeiffer Guideline #5: Place only one action in each step)**  
-> Each bullet is short and starts with a verb—ensuring clarity and preventing confusion.
-
-### 4. Generate and Preview the Website Locally
-- **Etter Principle**: *Test often to find and fix issues quickly*  
-  Etter advocates frequent iterations—especially with static site builds that are fast to regenerate.
-
-- **Practical Steps**:
-  1. **Open** a terminal in your project folder (the one containing `pelicanconf.py`).  
-  2. **Run**:
-     ```bash
      pelican content
      ```
-     This reads `.md` files in `content/` and outputs `.html` into `output/`.  
-  3. **Preview** by typing:
-     ```bash
+     This reads `.md` files in `content` and outputs `.html` into `output`.  
+
+   * Preview by typing:
+     ```
      pelican --listen
-     ```
-     Then visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to see your site.  
-  4. **Check** that your resume appears properly. If needed, revise `resume.md` and rebuild.
+     ``` 
+   * Then visit [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to see your site.  
+   * Check that your resume appears properly. If needed, revise `resume.md` and rebuild.
 
-### 5. Set Up Git Version Control
-- **Etter Principle**: *Use distributed version control to track changes and collaborate*  
-  Keeping your Pelican project in Git ensures your entire site is easily managed, revertible, and shareable.
+### 5th Step: Set Up GitHub Repository
 
-- **Practical Steps**:
-  1. **Initialize** Git:
-     ```bash
-     git init
-     git add .
-     git commit -m "Initial commit with Pelican resume"
+   * Setup a GitHub Repository by going to [ GitHub Dashboard](https://github.com/dashboard) and clicking new repository.
+   * Create a new repository on GitHub (e.g., “example”) and copy its `URL` from GitHub.  
+   * Select `settings` in Repository and then select `pages`
+   * Select `gh-pages` in branch and then `/root` and save it
+
+### 6th Step: Changing `publishconf.py`
+
+   * Open terminal and enter these commands with `URL` from Step 5 (You can also copy from GitHub after you make Repository):
      ```
-  2. **Create** a new repository on GitHub (e.g., “Comp-2600-A2”) and copy its URL.  
-  3. **Add** the remote and push:
-     ```bash
-     git remote add origin https://github.com/YourUsername/Comp-2600-A2.git
+     git remote add origin URL
+     git branch -M main
      git push -u origin main
      ```
-     *(Use personal access tokens or SSH keys instead of your password.)*
+   * Copy the `URL` from GitHub and open `publishconf.py`
+   * Enter the `URL` in
+   ```
+    SITEURL = "URL"
+   ```
 
-### 6. Publish the Static Site on GitHub
-- **Etter Principle**: *Make documentation publicly accessible on a forge*  
-  Etter suggests using a popular forge (like GitHub) so external collaborators or viewers can easily read or contribute.
+### 7th Step: Publish the Static Site on GitHub
+##### Guideline 5: Place only one action in each step
 
-**Common Approaches**:
+ * Enter these command in your terminal 
+ ```
+ pelican content -s publishconf.py   
+ ```
+ ```
+ ghp-import output -b gh-pages
+ ```
+ ```
+ git push origin gh-pages
+ ```
+---
+## Further Resources / Readings
 
-#### A) Host in a `docs/` Folder on Main Branch
-1. **Build** again:
-   ```bash
-   pelican content
+1. **Pelican Official Documentation**  
+   [Get Pelican](https://docs.getpelican.com/)  
+   *A guide on how to use Pelican*
 
+2. **GitHub Pages Documentation**  
+   [GitHub Pages](https://docs.github.com/en/pages)  
+   *Step-by-step instructions on how to start GitHub Repositories and also get help or troubleshoot*
+
+3. **Markdown Tutorial**  
+   [Markdown Tutorial](https://www.markdowntutorial.com/)  
+   *If you need a help learning on the basics of Markdown or want to explore advance features as well.*
+
+4. **Python Official Site**  
+   [Python](https://www.python.org/)  
+   *Downloads, documentation, and tutorials for Python, which powers Pelican.*
+---
 ## A FAQ
  * ##### Why is Markdown better than writing raw HTML? 
  * Markdown is simple, it is easier to read if compared to raw HTML which is easier to edit in future. Markdown gas alot of tags such we can use '#' for headings '-' or '*' for bullets making it easier to read.
 
  * ##### I changed the Markdown version of my resume, so why don’t I see the changes when I refresh the website in my browser?
- * Everytime you change your resume you have to stop the website by taping CTRL-C and then typing 
- ```bash
- pelican content
- ```
-* and then in your terminal again type the command below to publish the website with the updated resume.
-```bash
-pelican --listen
-```
-# Assignment-2
+ * Everytime you change your resume you have to type this in your terminal 
+ `pelican content` and then in your terminal again type the command below to check if your resume is correct `pelican --listen`
+ Now you will have to repeat Step 7 again. Enter these command in your terminal `pelican content -s publishconf.py` `ghp-import output -b gh-pages` `git push origin gh-pages` This will update the resume online
+
+
+---
+
+## Credits
+ * Author: Ish Khattar  
+ * Peer Editors: Davud Habibullah
+ * Third-Party Materials:
+   * [Pelican](https://docs.getpelican.com/) – a static site publishing tool All rights reserved.
+   * [Markdown Tutorial](https://www.markdowntutorial.com/) - To learn and get some features for Markdown
+   * [Python](https://www.python.org/) - Download Python and use it for Pelican
+   * [GitHub](https://docs.github.com/en/pages) - To upload the project
